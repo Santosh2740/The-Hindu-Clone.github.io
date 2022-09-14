@@ -13,7 +13,7 @@ function footer(){
             </ul>
         </div>
         <div id="footer-logo">
-            <a href="Home.html" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
+            <a href="./index.html" ><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
         </div>
         <div id="search-box_footer">
             <input id="footer_search" type="text" placeholder="Search here...">

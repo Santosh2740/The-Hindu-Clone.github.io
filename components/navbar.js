@@ -12,7 +12,7 @@ function navbar(){
         </ul>
     </div>
     <div id="footer-logo">
-        <a href="" ><img src="" alt=""></a>
+        <a href="./index.html" ><img src="" alt=""></a>
     </div>
     <div id="search-box_footer">
             <input id="query" type="text" placeholder="Search here...">
@@ -21,7 +21,7 @@ function navbar(){
     </div>
 </section>
     <div id="imglogo">
-        <a href=""><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
+        <a href="./index.html"><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></a>
         <div id="logotext">
             <div class="logotext1">LATEST NEWS</div>
             <div class="logotext2">SUNDAY JUNE 19,2022</div>

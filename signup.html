@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <h1>Sign up</h1>
+    <div id="container">
+       
+      <img src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" alt="">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <p> Continue with Google</p>
+    </div>
+
+    <br>
+
+    <div id="container2">
+      
+      <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="">
+      <p>Continue with apple</p>
+     
+    </div>
+    <br>
+
+    <div id="or">
+       ___________________     OR     ____________________
+    </div>
+      <br>
+<!-- 
+    <input id="email" type="text" placeholder="Enter your email address"> <br> <br> <br>
+
+    <button>Next</button>
+     <br> -->
+     <div class="container">
+        <input id="email" type="text" placeholder="Enter your email address" />
+
+        <input type="password" placeholder="Password" name="" id="password" />
+
+        <input type="text" placeholder="Enter your 10-digit mobile number *" name="" id="number" />
+
+           <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">
+         I'd like to receive updates and offers from THG via email and messages
+      </label>
+      
+      <button type="submit">Sign up</button>
+    </div>
+     
+     <div>
+       
+       <p>By signing up, you agree to The Hindus Terms of Use and Privacy Policy</p>
+      <h4>  Already have an account? <br> <br> <a href="Login.html">Log In  ></a> </h4>
+
+      <form>
+        
+        
+        <!-- <input type="submit" value="Register" /> -->
+    
+      </form>
+       
+     </div>
+  </form>
+    
+</body>
+</html>
+
+
+<script>
+    
+var form = document.querySelector("form");
+let LSData = JSON.parse(localStorage.getItem("userData"));
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  var data = {
+    email: form.email.value,
+    password: form.password.value,
+    number: form.number.value,
+  };
+  if (LSData != null && LSData.email === data.email) {
+    alert("Account already exist. Please Signin");
+    return;
+  }
+
+  localStorage.setItem("userData", JSON.stringify(data));
+  alert("Signup successful. Please Log in");
+  window.location.href="Login.html"
+  
+});
+
+
+</script>
+

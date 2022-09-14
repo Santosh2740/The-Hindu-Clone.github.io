@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Istok+Web&family=Kings&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@400;500&family=Ubuntu:wght@300&family=Vollkorn&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+body {
+  width: 65%;
+  /* margin: auto;
+  height: auto; */
+}
+
+#edf {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  line-height: 30px;
+}
+#styl {
+  margin-top: 10%;
+  color: #133b5a;
+  letter-spacing: 1.2px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 8px;
+}
+.container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "container1 news1"
+    "container1 news2"
+    "container1 news3"
+    "news4 news5"
+    "news6 news7"
+    "news8 news9"
+    "news10 .";
+  width: 100%;
+}
+
+.container > div > img {
+  width: 100%;
+}
+
+.container1 {
+  grid-area: container1;
+  font-family: "Istok Web", sans-serif;
+}
+.container1 > img {
+  height: 50%;
+}
+
+.container1 > p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.container1 > p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 500;
+}
+.container1 > p:nth-child(5) {
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.news1 {
+  grid-area: news1;
+}
+.news1 > img {
+  width: 80%;
+}
+
+.news2 {
+  grid-area: news2;
+}
+
+.news3 {
+  grid-area: news3;
+}
+
+.news4 {
+  grid-area: news4;
+}
+
+.news5 {
+  grid-area: news5;
+}
+
+.news6 {
+  grid-area: news6;
+}
+
+.news7 {
+  grid-area: news7;
+}
+
+.news8 {
+  grid-area: news8;
+}
+
+.news9 {
+  grid-area: news9;
+}
+
+.news10 {
+  grid-area: news10;
+}
+
+/* #edf {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#styl {
+  margin-top: 10%;
+  color: #133b5a;
+  letter-spacing: 1.2px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 8px;
+} */
+
+

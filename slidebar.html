@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Slidebar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #container {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        border: 1px solid red;
+        padding: 10px;
+        gap: 10px;
+        display: flex;
+        overflow-x: scroll;
+      }
+      /* #container::-webkit-scrollbar {
+        display: none;
+      } */
+      /* #container > div {
+        width: 200px;
+        border: 1px solid black;
+        height: 300px;
+      } */
+      /* #container > div > p {
+        width: 200px;
+      } */
+      #prev_home,
+      #next_home {
+        cursor: pointer;
+        position: absolute;
+        top: 22%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        margin-right: 25.2%;
+        margin-left: 24.8%;
+        border: none;
+        color: black;
+      }
+
+      /* Position the "next button" to the right */
+      #next_home {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      #prev_home:hover,
+      #next_home:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      #container > div {
+        width: 200px;
+        height: 200px;
+        display: grid;
+        border: 1px solid teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+  </body>
+</html>
+<script>
+  var button = document.getElementById("next_home");
+  // var button = document.querySelector(.next);
+
+  button.onclick = function () {
+    var container = document.getElementById("UsaNews");
+    sideScroll(container, "right", 25, 100, 10);
+  };
+
+  var back = document.getElementById("prev_home");
+  back.onclick = function () {
+    var container = document.getElementById("UsaNews");
+    sideScroll(container, "left", 25, 100, 10);
+  };
+
+  function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+      if (direction == "left") {
+        element.scrollLeft -= step;
+      } else {
+        element.scrollLeft += step;
+      }
+      scrollAmount += step;
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+    }, speed);
+  }
+</script>
+<script
+  src="https://kit.fontawesome.com/a14ae54690.js"
+  crossorigin="anonymous"
+></script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Exo+2:wght@700&family=Fira+Sans+Condensed:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./style/pagination.css">
+    <link rel="stylesheet" href="./style/footer.css">
+  </head>
+  <body>
+ 
+    <!-- Navbar by (RAJ and ARIF)-->
+
+    <div id="navBar"></div>
+
+     <!-------------------(ABDUL)------------------------------->
+
+    <hr id="line">
+    </div>
+      <div class="container">
+        <div class="container1"></div>
+      </div>
+    </div>  
+
+
+    <!---------------(SANTOSH)------------------------> 
+
+    <div id="pega"></div>
+    
+     <div id="fooTer1">
+ </div>
+ <div id="boxhh">
+    <div id="box-1">
+        <span>TRENDING TODAY</span>
+    </div>
+    <div id="box-2">
+        <span>TRENDING TOPIC</span>
+    </div>
+    <div id="box-3">
+        <SPan>TRENDING ON OUR GROUPS</SPan>
+        
+    </div>
+ </div>
+     <div id="fooTer2"></div>
+
+   
+</body>
+  <script src="details.js"></script>
+</html>
+<script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
+<script src="./menu.js"></script>
+  <script src="./scripts/footerData.js"></script>
+
+  <!------------------------(IMPORT---&---EXPOT---)------------------------------------------------------------>
+
+
+  <script type="module">
+
+    import {navbar}  from './components/navbar.js'
+     document.getElementById("navBar").innerHTML= navbar();
+
+     import {pagination} from './components/pagination.js'
+    document.getElementById("pega").innerHTML = pagination();
+
+    import {footer} from './components/footer.js'
+    document.getElementById("fooTer1").innerHTML = footer();
+
+    import {footerSecondPart} from './components/footer1.js'
+    document.getElementById("fooTer2").innerHTML = footerSecondPart();
+
+
+  let search = (e) => {
+  if(e.key === "Enter"){
+      event.preventDefault();
+      window.location.href = "searchDetails.html"
+      searchNews();
+      ;
+    }
+  };
+
+  document.getElementById("query").addEventListener("keypress",search);
+
+  let searchNews = async () => {
+    let value = document.getElementById("query").vlaue;
+    
+    try{
+      let res = await fetch(`https://newsapi.org/v2/everything?q=${value}&from=2022-06-20&to=2022-06-20&sortBy=popularity&apiKey=${Home_API}`)
+      // let res = await fetch(`https://newsapi.org/v2/top-headlines?country=q=${value}&apiKey=${Home_API}`)
+      let data = await res.json();
+      console.log(data);
+      localStorage.setItem("news", JSON.stringify(data));
+     
+    }catch(error){
+      console.log(error);
+    }
+  }
+  searchNews();
+
+  
+  let searchFooterNews = (e) => {
+  if(e.key === "Enter"){
+      event.preventDefault();
+      window.location.href = "searchDetails.html"
+      searchNews();
+      ;
+    }
+  };
+
+  document.getElementById("footer_search").addEventListener("keypress",searchFooterNews);
+
+  let serchFooterAppendNews = async () => {
+    let value = document.getElementById("query").vlaue;
+    
+    try{
+      let res = await fetch(`https://newsapi.org/v2/everything?q=${value}&from=2022-06-20&to=2022-06-20&sortBy=popularity&apiKey=${Home_API}`)
+      // let res = await fetch(`https://newsapi.org/v2/top-headlines?country=q=${value}&apiKey=${Home_API}`)
+      let data = await res.json();
+      console.log(data);
+      localStorage.setItem("news", JSON.stringify(data));
+     
+    }catch(error){
+      console.log(error);
+    }
+  }
+  serchFooterAppendNews();
+    
+
+
+  </script>

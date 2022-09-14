@@ -1,0 +1,238 @@
+
+/* =======================================FOOTER===FIRST=====PhibeRT==================================================== */
+  @import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Kings&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@400;500&family=Ubuntu:wght@300&family=Vollkorn&display=swap");
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+          }
+        body{
+            width:75%;
+            margin: auto;
+            background: #f5f5f5;
+        }
+        
+         /* #container-footer{
+            border-bottom: solid 1px #c8c8c3;
+            margin-top: 40px;
+            position: relative;
+        } */
+        /* #socialist-footer >ul>li{
+            color: #5a5a5a;
+            border-right: solid 1px #c8c8c3;
+            
+            height: 28px;
+            display: inline-block;
+            padding: 0px 12px 3px;
+            height: fit-content;
+            
+        } */
+        /* #socialist-footer >ul>li>a{
+            cursor: pointer;
+        } */
+        /* #footer-logo{
+            margin-top: auto;
+            text-align: center;
+         margin-top: -40px;
+        } */
+        
+        #footer-logo > a > img{
+            margin-left: 10%;
+            width: 250px;
+        }
+        /* #search-box_footer{
+            margin-top: -2px;
+            position: absolute;
+            right: 0;   
+        } */
+        /* input[type=text] {
+            background: #f5f5f5;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            height: 28px;
+            padding: 0 10px;
+            border-left: 1px solid #CCC;
+            outline:none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+       } */
+       /* .fa-magnifying-glass{    
+            float: right;
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            margin-left: 14px;
+            padding: 5px 10px 0 0;
+            background: none;
+            color: #000;
+            border: none;
+       } */
+        
+/* =======================================FOOTER===MIDDLE=====PART==================================================== */
+   
+#boxhh{
+    display: flex;
+    gap: 10px;
+    height: 220px;
+    width: 100%;
+    background-color: white;
+
+}
+#box-1{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    border-right: dotted 1px gray;
+}
+#box-2{
+    width: 28%;
+    height: 100%;
+    padding: 20px;
+    border-right: dotted 1px gray;
+}
+#box-3{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+}
+
+#boxhh >span{
+    padding: 0px 0px 3px 0px;
+}
+     
+   
+  
+  /* =======================================FOOTER===LAST=====PART==================================================== */
+
+  /* #column-footer {
+        
+    width: 30%;
+    padding: 30px;
+    border-right: dotted 1px #525252;
+    display: inline-block;
+}
+   #column2-footer {
+        padding: 30px;
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+    }
+    #column2-footer >ul >li{
+        overflow: hidden;
+   }
+   #column2-footer >ul +li:hover{
+    text-decoration: underline;
+
+    } */
+    span{
+        display: block;
+        color: #133b5a;
+        letter-spacing: 1.2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    a{
+        color: #7e7c76;
+        /* line-height: 24px; */
+        font-weight: 597;
+        font-size: smaller; 
+        text-transform: capitalize;
+        text-decoration: none;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #laster-footer{
+        background: #eaeaea;
+        color: #5a5a5a;
+    }
+    #footer-last{
+        float: left;
+        width: 100%;
+    }
+    #main_menu-footer{
+        margin-top: 15px;
+        color: #5a5a5a;
+        padding-bottom: 5px;
+    }
+    #main_menu-footer >ul>li{
+        color: #5a5a5a;
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size:small;
+        font-weight: 600;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    #main_menu-footer >ul>li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #footer-last2{
+        font-size: 11.5px;
+    }
+    #colom-footer{
+        margin-left: 30px;
+
+    }
+    #mainu_menu2-footer{
+        margin-left: 9%;
+        margin-top: -20px;
+        text-align: center;
+        float: left;
+        color: #5a5a5a;
+    }
+    #mainu_menu2-footer >ul>li{
+        display: inline-block;  
+    }
+    #mainu_menu2-footer >ul>li>a{
+        margin-left: 10px;
+        color: #7e7c76;
+        padding: 0 7px ;
+        border-right: 1px solid #7e7c76;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -.09px;
+        
+    }
+    #footer_finish{
+        text-align: center;
+    }
+
+    .fa-plus {
+  font-size: 10px;
+}
+
+/* ==================================MIDDLE=DIV====TEXT===FONT===STYLE====FROM======JAVASCRIPT==================================================================== */
+#edf {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+    /* line-height: 30px; */
+  }
+  #styl {
+    margin-top: 10%;
+    color: #133b5a;
+    letter-spacing: 1.2px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: small;
+    margin-bottom: 8px;
+  }
+  

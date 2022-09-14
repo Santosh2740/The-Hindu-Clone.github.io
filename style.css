@@ -1,0 +1,114 @@
+body{
+    font-family: sans-serif;
+
+}
+#image{
+
+ /* margin: auto; */
+ text-align: center;
+ margin-top: 40px;
+
+}
+p{
+    font-size:  20px ;
+    font-family: sans-serif;
+}
+
+#main{
+  /* border: 1px solid red;  */
+  height: 450px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
+#box1{
+    border: 1px solid #2d5f86;
+    margin: auto;
+    height: 370px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+
+#box2{
+    border: 1px solid #2d5f86;
+    margin: auto;
+    height: 400px;
+    width: 80%;
+    text-align: center;
+    background-color: #2d5f86;
+    color: white;
+    border-radius: 10px;
+    
+
+
+}
+
+#box3{
+    border: 1px solid #2d5f86;
+    margin: auto;
+    height: 370px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+#box1 > button{
+    background-color: #153c59;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#box2 > button{
+    background-color: #f7cf38;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+#box3 > button{
+    background-color: #153c59;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+}
+#box1 > button:hover {
+    opacity: 0.8;
+    }
+
+#box2 > button:hover {
+        opacity: 0.8;
+    }
+    #box3 > button:hover {
+        opacity: 0.8;
+    }
+
+p{
+    text-align: center;
+}
+
+
+
+
+
